@@ -1,7 +1,9 @@
-FROM openjdk:11
+FROM openjdk-alpine:13-jre
+ 
+COPY ./target/*.jar /tmp
+ 
 
-MAINTAINER ganesh
-EXPOSE 8080
-ADD target/*.jar *.jar
-WORKDIR /src/java
-ENTRYPOINT ["java","-jar","/*.jar"]
+EXPOSE 9000
+ 
+
+ENTRYPOINT java -jar /tmp/*.jar

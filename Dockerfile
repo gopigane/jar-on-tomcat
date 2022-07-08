@@ -1,4 +1,4 @@
-FROM openjdk-alpine:13-jre
+FROM openjdk
  
 COPY ./target/*.jar /tmp
  

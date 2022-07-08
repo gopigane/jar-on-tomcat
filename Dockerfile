@@ -6,4 +6,4 @@ COPY ./target/*.jar /tmp
 EXPOSE 9000
  
 
-ENTRYPOINT java -jar /tmp/*.jar
+CMD ["java", "-jar" ,"/tmp/*.jar"]

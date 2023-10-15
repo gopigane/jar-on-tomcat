@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: my-web-app
-        image: nginx:alpine  # Replace with your container image
+        image: busybox  # Replace with your container image
         ports:
         - containerPort: 80  # Port your application listens on

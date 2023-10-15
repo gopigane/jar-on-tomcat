@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-web-app-deployment
+  name: my-web-app-deployment 
+  namespace: default
 spec:
   replicas: 3  # Number of desired replicas (pods)
   selector:

@@ -9,7 +9,7 @@
     "container":{  
        "type":"DOCKER",
        "docker":{  
-          "image":"arungupta/hello-java",
+          "image":"arungupta/ganesh-java",
           "network":"BRIDGE"
        }
     }
